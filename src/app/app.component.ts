@@ -26,17 +26,40 @@ export class AppComponent  {
   
 data=0
 coba=''
+arr=[]
+pola=""
+x=0
+y=0
+i=0
+u=0
+bool:boolean;
  pangkat(a,b){
    this.data=Math.pow(a,b)
    if (this.data%2==0)
    {
      this.coba="genap"
+     this.bool=true
+     this.pola="Pola B"
+     this.x=b
+     this.y=this.data
+     while(this.x!=this.y)
+     {
+       for(this.i=0;this.i<this.x;this.i++)
+       {
+         this.arr[this.u].append("*")
+       }
+      this.u++
+      this.x++
+     }
    }
    else
    {
      this.coba="ganjil"
+     this.bool=false;
+     this.pola="Pola A"
    }
  }
+
 
 
 }
