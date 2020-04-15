@@ -22,4 +22,21 @@ export class AppComponent  {
   klikButton(){
     this.pesan='Tombol ditekan';
   }
+  
+  
+data=0
+coba=''
+ pangkat(a,b){
+   this.data=Math.pow(a,b)
+   if (this.data%2==0)
+   {
+     this.coba="genap"
+   }
+   else
+   {
+     this.coba="ganjil"
+   }
+ }
+
+
 }
